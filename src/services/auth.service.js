@@ -2,7 +2,7 @@ import api from './api';
 import * as SecureStore from 'expo-secure-store';
 
 const login = async (username, password) => {
-  const response = await api.post('/auth/signin', {
+  const response = await api.post('/auth/login', {
     username,
     password,
   });
